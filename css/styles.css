@@ -1,0 +1,169 @@
+h1 {
+  color: whitesmoke;
+  font-family: "Newsreader", serif;
+  font-size: 4rem;
+  font-style: italic;
+  font-weight: 600;
+}
+
+h3 {
+  color: #524e2a;
+  font-family: "Newsreader", serif;
+  font-size: 2rem;
+}
+
+.jumbotron {
+  background: left no-repeat url("../images/background1.png");
+  padding: 2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.msg {
+  font-family: "Newsreader", serif;
+  font-size: 1.35rem;
+}
+
+.current-day,
+.next-date {
+  margin: 27px 0 0;
+}
+
+.city {
+  background: no-repeat center url("../images/background2.png");
+}
+
+.city0 {
+  background: no-repeat url("../images/weather2.png");
+}
+
+.city1 {
+  background: center no-repeat url("../images/weather.png");
+}
+
+.city2 {
+  background: no-repeat url("../images/background3.png");
+}
+
+.currentDate {
+  background-color: rgb(252, 246, 238);
+  color: #575327;
+  border-radius: 8px;
+  font-size: 1.3rem;
+  margin-bottom: 50px;
+  padding: 0 5%;
+  text-align: center;
+}
+
+.cities-section,
+.one-section {
+  margin: 30px 0;
+}
+
+.cities {
+  padding: 0 30px;
+}
+
+.cities {
+  display: grid;
+  grid-gap: 50px 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.one-city {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.city {
+  border-radius: 20px;
+  margin-bottom: 50px;
+  padding: 30px 10%;
+}
+
+.cities-section .city0,
+.city1,
+.city2 {
+  border-radius: 20px;
+  position: relative;
+  padding: 30px 10%;
+}
+.city-place {
+  color: #3f3b0f;
+}
+
+.city-temp {
+  color: #464316;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.cities sup,
+.one-city sup {
+  font-size: 0.5em;
+}
+
+.cityname {
+  background-color: rgb(252, 196, 93);
+  border-radius: 30px;
+  margin-left: 10px;
+  padding: 0.2em 0.6em;
+}
+
+.city-icon {
+  width: 105px;
+  height: 105px;
+  margin-top: 10px;
+}
+
+figcaption {
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+#footer {
+  background: top no-repeat url("../images/background1.png");
+  font-family: "Newsreader", serif;
+  font-size: 1.7rem;
+  position: static;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  color: #fff;
+  text-align: center;
+  margin: 0px;
+  padding: 1.5rem;
+  /* z-index: 1; */
+}
+
+.footer-msg {
+  font-family: "Newsreader", serif;
+  font-size: 1rem;
+}
+
+/* @media (min-width: 768px) and (max-width: 991px) {
+  ul.one-city .city {
+    text-align: left;
+  }
+} */
+
+@media screen and (max-width: 767px) {
+  .cities-section .cities {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cities-section .cities {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .one-city {
+    padding: 0 30px;
+  }
+}
