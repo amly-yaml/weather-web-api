@@ -10,7 +10,7 @@ const showingOnecity = $(".one-city");
 const weatherDataList = [];
 
 // declare apikey and unit
-const apiKey = "06574ff59e776eef4c5123ad663388a1";
+const apiKey = "API_KEY";
 // const unit = "metric"; // C
 const unit = "imperial"; // F
 
